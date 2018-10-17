@@ -2,14 +2,14 @@ var haddade = {
     'name': 'Fernando Haddad',
     'description': '',
     'image': 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fernando_Haddad_Prefeito_2016.jpg/800px-Fernando_Haddad_Prefeito_2016.jpg',
-    positions: [],
+    positions: [1,3,5],
 
 };
 var outro = {
     'name': 'Jair Bolsonaro',
     'description': '',
     'image': 'https://upload.wikimedia.org/wikipedia/commons/e/e6/Jair_Bolsonaro_Medico_Militar_no_SUS_%28cropped%29.jpg',
-    positions: [],
+    positions: [2,4,6],
 
 };
 

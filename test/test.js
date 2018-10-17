@@ -15,6 +15,13 @@ describe('Candidatos', function() {
 	    });
 
     });
+    it('Adoptan posiciones', function() {
+	    assert.ok(candidatos.length);
+	    _.each(candidatos, function(candidato){
+		    assert.ok(candidato.positions.length);
+	    });
+
+    });
 });
 
 describe('Preguntas', function() {

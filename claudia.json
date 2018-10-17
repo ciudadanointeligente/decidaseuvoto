@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "decideseuvoto-executor",
+    "name": "decideseuvoto",
+    "region": "sa-east-1"
+  },
+  "api": {
+    "id": "500b8u8ex5"
+  }
+}
