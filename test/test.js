@@ -56,4 +56,28 @@ describe('La Calculadora', function(){
 		var calc = new Calculadora([2,4]);
 		assert.ok(calc.resultado);
 	});
+	it('entrega un candidato', function(){
+		var calc = new Calculadora([2,4]);
+		assert.equals(calc.resultado.candidato.name, 'Fernando Haddad');
+		assert.equals(calc.resultado.porcentage, 100);
+		assert.equals(calc.resultado.questions, [
+			{
+			    position_id: 2, 
+			    position_text: 'Não',
+			    name: 'Você concorda com as alterações realizadas na CLT e defende que a terceirização possa ocorrer em todas as atividades das empresas?',
+			    source: 'http://google.com',
+			    description: 'Perrito'
+			},
+		    
+		    {
+		        position_id: 4, 
+		        position_text: 'Não',
+		        name: 'Você acredita que os trabalhadores devem contribuir mais tempo do que contribuem hoje para se aposentar?',
+		        source: 'http://globo.com',
+		        description: 'Gatito'
+		    },
+
+			]);
+
+	});
 });
