@@ -9,8 +9,6 @@ describe('Candidatos', function() {
 	    _.each(candidatos, function(candidato){
 		    assert.ok(candidato.name);
 		    assert.ok(candidato.image);
-		    // assert.ok(candidato.positions.length);
-		    // Esto va en otro test
 		    assert.ok(candidato.id.length);
 	    });
 
@@ -18,7 +16,11 @@ describe('Candidatos', function() {
     it('Adoptan posiciones', function() {
 	    assert.ok(candidatos.length);
 	    _.each(candidatos, function(candidato){
-		    assert.ok(candidato.positions.length);
+		    assert.ok(Object.keys(candidato.positions).length);
+		    _.each(candidato.positions, function(position_taken_by_candidate, id){
+		    	assert.ok(_.has(position_taken_by_candidate, 'source'));
+		    	assert.ok(_.has(position_taken_by_candidate, 'description'));
+		    });
 	    });
 
     });
@@ -43,8 +45,6 @@ describe('Preguntas', function() {
 		    	assert.ok(position_ids.indexOf(position.id) === -1);
 		    	position_ids.push(position.id);
 		    });
-
-
 	    });
 	    assert.ok(position_ids.length);
 
