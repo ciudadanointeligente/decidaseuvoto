@@ -2,6 +2,7 @@ var assert = require('assert');
 var _ = require('lodash');
 var candidatos = require('../candidatos.js');
 var questions = require('../questions.js');
+var Calculadora = require('../calculator.js');
 
 describe('Candidatos', function() {
     it('instanciamiento y devuelve id', function() {
@@ -49,4 +50,10 @@ describe('Preguntas', function() {
 	    assert.ok(position_ids.length);
 
     });
+});
+describe('La Calculadora', function(){
+	it('da un resultado', function(){
+		var calc = new Calculadora([2,4]);
+		assert.ok(calc.resultado);
+	});
 });
