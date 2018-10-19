@@ -9,6 +9,8 @@ var chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 
 
+console.log(process.env.npm_config_somevariable)
+
 describe('Candidatos', function() {
     it('instanciamiento y devuelve id', function() {
 	    assert.ok(candidatos.length);
