@@ -3,6 +3,11 @@ var _ = require('lodash');
 var candidatos = require('../candidatos.js');
 var questions = require('../questions.js');
 var Calculadora = require('../calculator.js');
+var app = require('../app.js');
+var chai = require('chai');
+var chaiHttp = require('chai-http');
+chai.use(chaiHttp);
+
 
 describe('Candidatos', function() {
     it('instanciamiento y devuelve id', function() {
@@ -70,4 +75,27 @@ describe('La Calculadora', function(){
 			assert.ok(question.position_text);
 		});
 	});
+});
+
+describe('la vista inicial', function(){
+	it('le trae las preguntas', function(done){
+		chai.request(app).get('/').end(function(err, response){
+			assert.equal(response.status, 200);
+			done();
+		});
+	});
+	it('le calcula la cosa', function(done){
+		var to_be_posted = {};
+		_.each(questions, function(question){
+			to_be_posted["question_" + question.id] = question.positions[_.random()].id;
+		});
+
+		chai.request(app).post('/').send(to_be_posted)
+		.end(function(err, response){
+			assert.equal(response.status, 200);
+			done();
+		});
+	});
+
+
 });
