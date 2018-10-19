@@ -1,7 +1,7 @@
 <h1>Decida Seu Voto</h1>
 <p>Decida seu voto aqui com a gente!, nao vote em bolsonaro.</p>
 
-<form method="POST">
+<form method="POST" action='/' >
     {{#each questions as |question question_index|}}
       <div class="form-group">
         <label for="question_{{id}}">{{question.name}}</label>

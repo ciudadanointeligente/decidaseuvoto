@@ -9,8 +9,8 @@ router.get('/', function(req, res, next) {
   res.render('index', {'questions': questions_});
 });
 router.post('/', function(req, res, next) {
-    var answers = _.map(req.body, function(e){return e;});
+    var answers = _.map(req.body, function(e){return parseInt(e);});
     var calc = new Calculadora(answers);
-    res.render('result', {'result': calc.resultado});
+    res.render('result', {'result': calc.resultado, 'as_string': JSON.stringify(calc.resultado)});
 });
 module.exports = router;
