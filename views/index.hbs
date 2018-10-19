@@ -1,21 +1,32 @@
 <h1>Decida Seu Voto</h1>
-<p>Decida seu voto aqui com a gente!, nao vote em bolsonaro.</p>
+<p>Decida seu voto aqui com a gente!, nao vote na bestia.</p>
 
 <form method="POST" action='/' >
     {{#each questions as |question question_index|}}
-      <div class="form-group">
-        <label for="question_{{id}}">{{question.name}}</label>
-        {{#each question.positions as |position position_index| }}
-            
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="question_{{question.id}}" id="answer_question_{{position.id}}" value="{{position.id}}">
-              <label class="form-check-label" for="answer_question_{{id}}">
-                {{label}}
-              </label>
-            </div>
-        {{/each}}
-
+    <div class="form-group">
+      <div class="row">
+        <div class="col-8">
+          <label for="question_{{id}}">{{question.name}}</label>
+        </div>
+        <div class="col-4">
+          {{#each question.positions as |position position_index| }}
+              
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question_{{question.id}}" id="answer_question_{{position.id}}" value="{{position.id}}">
+                <label class="form-check-label"  for="answer_question_{{id}}">
+                  {{label}}
+                </label>
+              </div>
+          {{/each}}
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="answer_question_{{position.id}}" name="question_{{question.id}}">
+            <label class="form-check-label" for="answer_question_{{id}}">
+              Não sei
+            </label>
+          </div>
+        </div>
       </div>
+    </div>
     {{/each}}  
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
