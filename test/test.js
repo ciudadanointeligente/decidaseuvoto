@@ -57,27 +57,17 @@ describe('La Calculadora', function(){
 		assert.ok(calc.resultado);
 	});
 	it('entrega un candidato', function(){
-		var calc = new Calculadora([2,4]);
-		assert.equals(calc.resultado.candidato.name, 'Fernando Haddad');
-		assert.equals(calc.resultado.porcentage, 100);
-		assert.equals(calc.resultado.questions, [
-			{
-			    position_id: 2, 
-			    position_text: 'Não',
-			    name: 'Você concorda com as alterações realizadas na CLT e defende que a terceirização possa ocorrer em todas as atividades das empresas?',
-			    source: 'http://google.com',
-			    description: 'Perrito'
-			},
-		    
-		    {
-		        position_id: 4, 
-		        position_text: 'Não',
-		        name: 'Você acredita que os trabalhadores devem contribuir mais tempo do que contribuem hoje para se aposentar?',
-		        source: 'http://globo.com',
-		        description: 'Gatito'
-		    },
+		let candidate_positions = Object.keys(candidatos[1].positions);
+		candidate_positions = _.map(candidate_positions, function(e){return parseInt(e);})
 
-			]);
-
+		var calc = new Calculadora(candidate_positions);
+		assert.ok(calc.resultado.candidato.name);
+		assert.equal(calc.resultado.percentage, 100);
+		_.each(calc.resultado.questions, function(question){
+			assert.ok(question.position_id);
+			assert.ok(_.has(question, 'description'));
+			assert.ok(_.has(question, 'source'));
+			assert.ok(question.position_text);
+		});
 	});
 });
