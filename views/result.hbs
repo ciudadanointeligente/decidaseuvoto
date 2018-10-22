@@ -1,8 +1,16 @@
-<div class="jumbotron text-center">
-    <img src="{{result.candidato.image}}">
-  <h1 class="display-4">{{result.candidato.name}}</h1>
-  <p class="lead">{{#round result.percentage}}{{/round}}%</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="/" role="button">Voltar</a>
+<img src="/images/logo-decida.svg" class="center">
+<p class="center3">Decida seu voto aqui com a gente!, nao vote na bestia.</p>
+<p class="center2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-10">
+      <div class="jumbotron text-center">
+          <img src="{{result.candidato.image}}" class="rounded-circle">
+        <h1 class="display-4">Tu resultado: {{result.candidato.name}}</h1>
+        <p class="lead">{{#round result.percentage}}{{/round}}%</p>
+        <a class="btn btn-primary btn-lg" href="/" role="button">Voltar</a>
+      </div>
+    </div>
+  </div>
 </div>

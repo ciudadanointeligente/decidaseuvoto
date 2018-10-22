@@ -1,7 +1,7 @@
 var haddade = {
     'name': 'Fernando Haddad',
     'description': '',
-    'image': 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fernando_Haddad_Prefeito_2016.jpg/800px-Fernando_Haddad_Prefeito_2016.jpg',
+    'image': '/images/haddad.png',
     'positions': {
                     2: {source: '', description: ''},
                     4: {source: '', description: ''},
@@ -19,7 +19,7 @@ var haddade = {
 var outro = {
     'name': 'Jair Bolsonaro',
     'description': '',
-    'image': 'https://upload.wikimedia.org/wikipedia/commons/e/e6/Jair_Bolsonaro_Medico_Militar_no_SUS_%28cropped%29.jpg',
+    'image': '/images/bolsonaro.png',
     'positions': {
                 1: {source: '', description: ''},
                 3: {source: '', description: ''},
@@ -38,7 +38,7 @@ var outro = {
 
 var questions = [
     {
-    id: 1, 
+    id: 1,
     name: 'O trabalhador deve contribuir mais tempo do que já contribui hoje para poder se aposentar?',
     positions: [
                 {label: 'Sim', id: 1},// Outro
@@ -46,7 +46,7 @@ var questions = [
                 ]
     },
     {
-        id: 2, 
+        id: 2,
         name: 'Quem ganha R$ 5 mil deve pagar proporcionalmente o mesmo imposto de quem ganha R$ 5 milhões?',
         positions: [
                     {label: 'Sim', id: 3},// Outro
@@ -54,7 +54,7 @@ var questions = [
                     ]
     },
     {
-        id: 3, 
+        id: 3,
         name: 'O Estado deve investir mais na saúde pública para garantir o acesso gratuito e universal a todos os cidadãos?',
         positions: [
                     {label: 'Sim', id: 5},// Haddade
@@ -62,7 +62,7 @@ var questions = [
                     ]
     },
     {
-        id: 4, 
+        id: 4,
         name: 'As pessoas LGBTI+ devem ter os mesmos direitos de todos os outros cidadãos?',
         positions: [
                     {label: 'Sim', id: 7},// Haddade
@@ -70,7 +70,7 @@ var questions = [
                     ]
     },
     {
-        id: 5, 
+        id: 5,
         name: 'Você é a favor da igualdade salarial entre homens e mulheres que ocupem o mesmo cargo?',
         positions: [
                     {label: 'Sim', id: 9},// Haddade
@@ -78,7 +78,7 @@ var questions = [
                     ]
     },
     {
-        id: 6, 
+        id: 6,
         name: 'Você apoia a valorização do salário mínimo?',
         positions: [
                     {label: 'Sim', id: 11},// Haddade
@@ -86,7 +86,7 @@ var questions = [
                     ]
     },
     {
-        id: 7, 
+        id: 7,
         name: ' O Brasil deve participar do Conselho de Direitos Humanos da ONU?',
         positions: [
                     {label: 'Sim', id: 13},// Haddade
@@ -94,7 +94,7 @@ var questions = [
                     ]
     },
     {
-        id: 8, 
+        id: 8,
         name: 'O Brasil deve expandir a geração de energias renováveis (ex: solar, eólica, biomassa)?',
         positions: [
                     {label: 'Sim', id: 15},// Haddade
@@ -102,7 +102,7 @@ var questions = [
                     ]
     },
     {
-        id: 9, 
+        id: 9,
         name: 'O governo deve ouvir a sociedade em seu processo de tomada de decisão?',
         positions: [
                     {label: 'Sim', id: 17},// Haddade
@@ -110,7 +110,7 @@ var questions = [
                     ]
     },
     {
-        id: 10, 
+        id: 10,
         name: 'O Brasil deve ampliar seus investimentos em educação ao longo dos próximos anos?',
         positions: [
                     {label: 'Sim', id: 19},// Haddade
