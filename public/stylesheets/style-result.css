@@ -29,7 +29,19 @@
   margin: 5px 0 50px;
   font-size: 2rem;
 }
-
+.pergunta-concordante {
+  margin: unset; 
+  font-size: medium;
+  font-weight: unset;
+  padding-bottom: 5px;
+}
+.resposta-concordante {
+  margin: unset;
+  font-size: medium;
+  font-weight: unset;
+  padding-bottom: 10px;
+  color: #bfc944;
+}
 @media (max-width: 1199px) {
   .candidate{
     max-width: 36%;

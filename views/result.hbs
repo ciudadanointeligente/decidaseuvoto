@@ -30,7 +30,8 @@
               <p>Você e {{result.candidato.name}} têm <span class="lead percentage">{{#round result.percentage}}{{/round}}%</span> de compatibilidade.</p>
               <p>As coisas em comum são:</p>
               {{#each result.questions as |question question_index|}}
-                <p  class="center2">{{question.position_text}} (Você e seu candidato acham que {{downcase question.position_label}}.)</p>
+                <p  class="pergunta-concordante">{{question.position_text}}</p>
+                <p  class="resposta-concordante">Você e {{../result.candidato.name}} concordam que {{downcase question.position_label}}.</p>
               {{/each}}
             </div>
           </div>
