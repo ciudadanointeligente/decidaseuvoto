@@ -99,3 +99,9 @@ p {
     border-radius: 3px;
 
 }
+.fa-check {
+  color: green;
+}
+.fa-times {
+  color: red;
+}
