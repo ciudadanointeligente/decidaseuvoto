@@ -3,14 +3,14 @@
 <p class="center2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 <div class="container">
-  <div class="row justify-content-md-center">
+  <div class="row justify-content-md-center candidate-result">
     <div class="flag-background">
       <div class="jumbotron text-center">
           <img src="{{result.candidato.image}}" class="candidate">
       </div>
     </div>
-      <h1 class="display-4">Tu resultado: {{result.candidato.name}}</h1>
-      <p class="lead">{{#round result.percentage}}{{/round}}%</p>
+      <h1 class="display-4 text-center">Tu resultado: {{result.candidato.name}}</h1>
+      <p class="lead percentage">{{#round result.percentage}}{{/round}}%</p>
       <a class="btn btn-primary btn-lg" href="/" role="button">Voltar</a>
   </div>
 </div>

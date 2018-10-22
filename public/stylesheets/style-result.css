@@ -1,7 +1,13 @@
+.candidate-result{
+  background-color: transparent;
+}
+
 .flag-background{
   background-image: url("/images/background.png");
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 5px;
+  max-height: 334px;
 }
 
 .jumbotron{
@@ -11,6 +17,17 @@
 
 .candidate{
   max-width: 35%;
+}
+
+.display-4{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.percentage{
+  color: #bfc944;
+  font-weight: 700;
+  margin: 5px 0 50px;
+  font-size: 2rem;
 }
 
 @media (max-width: 1199px) {
