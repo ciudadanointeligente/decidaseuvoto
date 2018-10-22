@@ -47,9 +47,9 @@ p {
       color: #bfc944;
 }
 
-#label {
+.label {
   display: block;
-  margin-left: auto;
+  margin-left: 100px;
   margin-right: auto;
 }
 
