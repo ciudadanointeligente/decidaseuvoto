@@ -71,8 +71,11 @@ p {
 
 .col-4 {
     padding-bottom: 10px;
+        padding-left: 4%;
 }
 
 .col-6 {
       padding-top: 10px;
+      padding-left: 4%;
+      max-width: 100%;
 }
