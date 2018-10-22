@@ -41,80 +41,80 @@ var questions = [
     id: 1,
     name: 'O trabalhador deve contribuir mais tempo do que já contribui hoje para poder se aposentar?',
     positions: [
-                {label: 'Sim', id: 1},// Outro
-                {label:'Não', id: 2},// Haddade
+                {label: 'Sim', extra_class: 'sim-resposta', id: 1},// Outro
+                {label:'Não', extra_class: 'nao-resposta', id: 2},// Haddade
                 ]
     },
     {
         id: 2,
         name: 'Quem ganha R$ 5 mil deve pagar proporcionalmente o mesmo imposto de quem ganha R$ 5 milhões?',
         positions: [
-                    {label: 'Sim', id: 3},// Outro
-                    {label:'Não', id: 4},// Haddade
+                    {label: 'Sim', extra_class: 'sim-resposta', id: 3},// Outro
+                    {label:'Não', extra_class: 'nao-resposta', id: 4},// Haddade
                     ]
     },
     {
         id: 3,
         name: 'O Estado deve investir mais na saúde pública para garantir o acesso gratuito e universal a todos os cidadãos?',
         positions: [
-                    {label: 'Sim', id: 5},// Haddade
-                    {label:'Não', id: 6},// Outro
+                    {label: 'Sim', extra_class: 'sim-resposta', id: 5},// Haddade
+                    {label:'Não', extra_class: 'nao-resposta', id: 6},// Outro
                     ]
     },
     {
         id: 4,
         name: 'As pessoas LGBTI+ devem ter os mesmos direitos de todos os outros cidadãos?',
         positions: [
-                    {label: 'Sim', id: 7},// Haddade
-                    {label:'Não', id: 8},// Outro
+                    {label: 'Sim', extra_class: 'sim-resposta', id: 7},// Haddade
+                    {label:'Não', extra_class: 'nao-resposta', id: 8},// Outro
                     ]
     },
     {
         id: 5,
         name: 'Você é a favor da igualdade salarial entre homens e mulheres que ocupem o mesmo cargo?',
         positions: [
-                    {label: 'Sim', id: 9},// Haddade
-                    {label:'Não', id: 10},// Outro
+                    {label: 'Sim', extra_class: 'sim-resposta', id: 9},// Haddade
+                    {label:'Não', extra_class: 'nao-resposta', id: 10},// Outro
                     ]
     },
     {
         id: 6,
         name: 'Você apoia a valorização do salário mínimo?',
         positions: [
-                    {label: 'Sim', id: 11},// Haddade
-                    {label:'Não', id: 12},// Outro
+                    {label: 'Sim', extra_class: 'sim-resposta', id: 11},// Haddade
+                    {label:'Não', extra_class: 'nao-resposta', id: 12},// Outro
                     ]
     },
     {
         id: 7,
         name: ' O Brasil deve participar do Conselho de Direitos Humanos da ONU?',
         positions: [
-                    {label: 'Sim', id: 13},// Haddade
-                    {label:'Não', id: 14},// Outro
+                    {label: 'Sim', extra_class: 'sim-resposta', id: 13},// Haddade
+                    {label:'Não', extra_class: 'nao-resposta', id: 14},// Outro
                     ]
     },
     {
         id: 8,
         name: 'O Brasil deve expandir a geração de energias renováveis (ex: solar, eólica, biomassa)?',
         positions: [
-                    {label: 'Sim', id: 15},// Haddade
-                    {label:'Não', id: 16},// Outro
+                    {label: 'Sim', extra_class: 'sim-resposta', id: 15},// Haddade
+                    {label:'Não', extra_class: 'nao-resposta', id: 16},// Outro
                     ]
     },
     {
         id: 9,
         name: 'O governo deve ouvir a sociedade em seu processo de tomada de decisão?',
         positions: [
-                    {label: 'Sim', id: 17},// Haddade
-                    {label:'Não', id: 18},// Outro
+                    {label: 'Sim', extra_class: 'sim-resposta', id: 17},// Haddade
+                    {label:'Não', extra_class: 'nao-resposta', id: 18},// Outro
                     ]
     },
     {
         id: 10,
         name: 'O Brasil deve ampliar seus investimentos em educação ao longo dos próximos anos?',
         positions: [
-                    {label: 'Sim', id: 19},// Haddade
-                    {label:'Não', id: 20},// Outro
+                    {label: 'Sim', extra_class: 'sim-resposta', id: 19},// Haddade
+                    {label:'Não', extra_class: 'nao-resposta', id: 20},// Outro
                     ]
     }
 ];
