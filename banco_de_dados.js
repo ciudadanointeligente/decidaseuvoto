@@ -119,6 +119,6 @@ var questions = [
     }
 ];
 module.exports = {
-    candidatos: [haddade, outro],
+    candidatos: [outro, haddade],
     questions: questions,
 };
