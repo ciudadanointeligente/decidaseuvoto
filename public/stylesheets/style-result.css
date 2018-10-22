@@ -1,0 +1,50 @@
+.flag-background{
+  background-image: url("/images/background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.jumbotron{
+  background: transparent;
+  padding: 3rem 6rem;
+}
+
+.candidate{
+  max-width: 35%;
+}
+
+@media (max-width: 1199px) {
+  .candidate{
+    max-width: 36%;
+  }
+  .jumbotron{
+    padding: 2.5rem 5.6rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .candidate{
+    max-width: 36%;
+  }
+  .jumbotron{
+    padding: 1.5rem 3.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .candidate{
+    max-width: 40%;
+  }
+  .jumbotron{
+    padding: 1rem 3.1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .candidate{
+    max-width: 45%;
+  }
+  .jumbotron{
+    padding: 0.7rem 2.9rem;
+  }
+}
