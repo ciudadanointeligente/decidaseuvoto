@@ -47,6 +47,12 @@ p {
       color: #bfc944;
 }
 
+#label {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 p {
   margin-top: 30px;
   margin-bottom: 30px;
