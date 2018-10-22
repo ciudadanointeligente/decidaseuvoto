@@ -12,7 +12,7 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #bfc944;
 }
 
 p {
@@ -99,6 +99,3 @@ p {
     border-radius: 3px;
 
 }
-
-.Sim { background-image: '/images/si.png';}
-.Não {background-image: '/images/no.png';}
