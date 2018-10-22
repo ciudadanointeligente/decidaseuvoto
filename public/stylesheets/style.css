@@ -49,8 +49,8 @@ p {
 
 .label {
   display: block;
-  margin-left: 100px;
-  margin-right: auto;
+  margin-top:20px;
+  margin-bottom:20px;
 }
 
 p {
