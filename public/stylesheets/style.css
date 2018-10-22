@@ -89,3 +89,12 @@ p {
     margin-bottom: 100px;
     margin-left: 10%;
   }
+
+  .form-check-label {
+  
+    background-color: #e9ecef;
+    padding-left: 10px;
+    padding-right: 11px;
+    border-radius: 3px;
+
+}
