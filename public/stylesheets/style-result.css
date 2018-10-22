@@ -52,6 +52,7 @@
   color: white;
   font-weight: 700;
   padding: 0 20px 0  0;
+  font-size: 1rem;
 }
 
 .menu-link:hover{
@@ -83,6 +84,9 @@
   }
   .jumbotron{
     padding: 1rem 3.1rem;
+  }
+  .menu-link{
+    font-size: 0.7rem;
   }
 }
 
