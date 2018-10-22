@@ -3,6 +3,8 @@
 <p class="center2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 <div class="container">
+  <div class="row justify-content-md-center">
+  </div>
   <div class="row justify-content-md-center candidate-result">
     <div class="flag-background">
       <div class="jumbotron text-center">
@@ -10,7 +12,29 @@
       </div>
     </div>
       <h1 class="display-4 text-center">{{result.candidato.name}}</h1>
-      <p class="lead percentage">{{#round result.percentage}}{{/round}}%</p>
       <a class="btn btn-primary btn-lg" href="/" role="button"><i class="fas fa-chevron-left"></i> Voltar</a>
+      <button class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#entendaSeuResultado" role="button">
+        <i class="fas fa-info-circle"></i> Entenda seu resultado</button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="entendaSeuResultado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Entendendo o Resultado</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Você e {{result.candidato.name}} têm <span class="lead percentage">{{#round result.percentage}}{{/round}}%</span> de compatibilidade.</p>
+              <p>As coisas em comum são:</p>
+              {{#each result.questions as |question question_index|}}
+                <p  class="center2">{{question.position_text}} (Você e seu candidato acham que {{downcase question.position_label}}.)</p>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 </div>

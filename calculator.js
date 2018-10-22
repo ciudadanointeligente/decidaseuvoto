@@ -30,6 +30,7 @@ var getCompatibilityWith = function(candidato, answers){
         let original_answer = getQuestionFromAnswerId(answer);
         let question = {
             description: position.description,
+            position_label: _.find(original_answer.positions, {'id': answer}).label,
             position_id: answer,
             source: position.source,
             position_text: original_answer.name
