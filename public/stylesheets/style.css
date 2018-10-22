@@ -81,3 +81,7 @@ p {
       padding-left: 4%;
       max-width: 100%;
 }
+
+.btn btn-primary {
+  color: black;
+}
