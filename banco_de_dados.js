@@ -9,10 +9,11 @@ var haddade = {
                     7: {source: '', description: ''},
                     9: {source: '', description: ''},
                     11: {source: '', description: ''},
-                    14: {source: '', description: ''},    
+                    14: {source: '', description: ''},
                     16: {source: '', description: ''},
                     17: {source: '', description: ''},
                     19: {source: '', description: ''},
+                    21: {source: '', description: ''},
                 },
 
 };
@@ -31,6 +32,7 @@ var outro = {
                 15: {source: '', description: ''},
                 18: {source: '', description: ''},
                 20: {source: '', description: ''},
+                22: {source: '', description: ''},
               },
 
 };
@@ -115,6 +117,14 @@ var questions = [
         positions: [
                     {label: 'Sim', extra_class: 'check', id: 19},// Haddade
                     {label:'Não', extra_class: 'times', id: 20},// Outro
+                    ]
+    },
+    {
+        id: 11,
+        name: 'O governo deve fiscalizar e punir crimes contra o meio ambiente?',
+        positions: [
+                    {label: 'Sim', extra_class: 'check', id: 21},// Haddade
+                    {label:'Não', extra_class: 'times', id: 22},// Outro
                     ]
     }
 ];
