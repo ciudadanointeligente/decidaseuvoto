@@ -1,8 +1,11 @@
 
 <img src="/images/logo-decida.svg" class="center">
 <p class="center3">Decida seu voto aqui com a gente!, nao vote na bestia.</p>
-<p class="center2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p class="center2">Talvez você já tenha decidido o candidato que receberá seu voto neste 2º turno da eleição presidencial. Talvez ainda esteja em dúvida sobre qual deles representa melhor seus valores e suas aspirações para o futuro do país. Ou talvez tenha a sensação de que ambos se distanciam do que você acredita...
 
+O fato é que a escolha do próximo Presidente da República está em nossas mãos. Por isso, queremos te ajudar a decidir seu voto de forma ágil e bem fundamentada. Isso em menos de cinco minutos!
+
+Basta responder dez perguntas rápidas e diretas sobre temas determinantes para os rumos do Brasil nos próximos anos e você terá mais um elemento para identificar qual candidato se aproxima mais do futuro que você deseja para todos os brasileiros, Fernando Haddad ou Jair Bolsonaro.</p>
 
 <form method="POST" action='/' >
     {{#each questions as |question question_index|}}
@@ -17,16 +20,14 @@
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="question_{{question.id}}" id="answer_question_{{position.id}}" value="{{position.id}}">
                 <label class="form-check-label"  for="answer_question_{{id}}">
-                  <i class="fas fa-{{ extra_class }}"></i>
                   {{label}}
                 </label>
               </div>
           {{/each}}
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="nao_sei_answer_question_{{question.id}}" name="question_{{question.id}}">
-
-            <label class="form-check-label" for="nao_sei_answer_question_{{question.id}}">
-            <img src="/images/question.png">  Não sei
+            <input class="form-check-input" type="radio" id="answer_question_{{position.id}}" name="question_{{question.id}}">
+            <label class="form-check-label" for="answer_question_{{id}}">
+              Não sei
             </label>
           </div>
         </div>
