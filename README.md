@@ -1,5 +1,5 @@
 # DecidaSeuVoto
-=============
+
 Decida seu voto aqui com a gente!
 
 Instalação
