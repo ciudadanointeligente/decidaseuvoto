@@ -1,37 +1,52 @@
-
-<img src="/images/logo-decida.svg" class="center">
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm"><img src="/images/logo-decida.svg" class="center"></div>
+<div class="col-sm">
 <p class="center3">Decida seu voto aqui com a gente!, nao vote na bestia.</p>
+</div>
+<div class="col-sm">
 <p class="center2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+</div>
 
+<div class="container">
+       <div class="row">
+          <div class="col-md-12">
+            <div class="text-xs-center text-lg-center">
 
-<form method="POST" action='/' >
-    {{#each questions as |question question_index|}}
-    <div class="form-group">
-      <div class="row">
-        <div class="col-6">
-          <label for="question_{{id}}"><strong>{{add question_index 1 }}) {{question.name}}</strong></label>
-        </div>
-        <div class="col-4">
-          {{#each question.positions as |position position_index| }}
+              <form method="POST" action='/' >
+                  {{#each questions as |question question_index|}}
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-6">
+                        <label for="question_{{id}}"><strong>{{add question_index 1 }}) {{question.name}}</strong></label>
+                      </div>
+                      <div class="col-4">
+                        {{#each question.positions as |position position_index| }}
 
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="question_{{question.id}}" id="answer_question_{{position.id}}" value="{{position.id}}">
-                <label class="form-check-label"  for="answer_question_{{id}}">
-                  <i class="fas fa-{{ extra_class }}"></i>
-                  {{label}}
-                </label>
-              </div>
-          {{/each}}
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="nao_sei_answer_question_{{question.id}}" name="question_{{question.id}}">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="question_{{question.id}}" id="answer_question_{{position.id}}" value="{{position.id}}">
+                              <label class="form-check-label"  for="answer_question_{{id}}">
+                                <i class="fas fa-{{ extra_class }}"></i>
+                                {{label}}
+                              </label>
+                            </div>
+                        {{/each}}
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" id="nao_sei_answer_question_{{question.id}}" name="question_{{question.id}}">
 
-            <label class="form-check-label" for="nao_sei_answer_question_{{question.id}}">
-            <img src="/images/question.png">  Não sei
-            </label>
+                          <label class="form-check-label" for="nao_sei_answer_question_{{question.id}}">
+                          <img src="/images/question.png">  Não sei
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {{/each}}
+                <button type="submit" class="btn btn-primary">Ver resultados</button>
+              </form>
+
+           </div>
           </div>
-        </div>
-      </div>
-    </div>
-    {{/each}}
-  <button type="submit" class="btn btn-primary">Ver resultados</button>
-</form>
+       </div>
+  </div>
