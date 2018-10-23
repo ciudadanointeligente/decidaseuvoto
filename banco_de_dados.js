@@ -89,8 +89,8 @@ var questions = [
         id: 7,
         name: ' O Brasil deve sair do Conselho de Direitos Humanos da ONU?',
         positions: [
-                    {label: 'Sim', id: 13},// Haddade
-                    {label:'Não', id: 14},// Outro
+                    {label: 'Sim', id: 13},// Outro
+                    {label:'Não', id: 14},// Haddade
                     ]
     },
     {
