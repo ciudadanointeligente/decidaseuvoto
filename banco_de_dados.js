@@ -81,7 +81,7 @@ var questions = [
     },
     {
         id: 6,
-        name: 'Você apoia a valorização do salário mínimo?',
+        name: 'A legislação anticorrupção deve contar com ampla contribuição da sociedade civil para ser definida?',
         positions: [
                     {label: 'Sim', extra_class: 'check', id: 11},// Haddade
                     {label:'Não', extra_class: 'times', id: 12},// Outro
