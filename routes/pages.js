@@ -7,4 +7,7 @@ router.get('/intro', function(req, res, next) {
 router.get('/sobre', function(req, res, next) {
     res.render('sobre');
 });
+router.get('/metodologia', function(req, res, next) {
+    res.render('metodologia');
+});
 module.exports = router;
