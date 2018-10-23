@@ -1,4 +1,5 @@
 # DecidaSeuVoto
+![Logo DecidaSeuVoto](https://raw.githubusercontent.com/ciudadanointeligente/decidaseuvoto/master/public/images/logo-decida.png)
 
 Decida seu voto aqui com a gente!
 
