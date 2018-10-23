@@ -5,29 +5,44 @@
       </div>
     </div>
       <h1 class="display-4 text-center">{{result.candidato.name}}</h1>
-      <a class="btn btn-primary btn-lg" href="/" role="button"><i class="fas fa-chevron-left"></i> Voltar</a>
-      <button class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#entendaSeuResultado" role="button">
-        <i class="fas fa-info-circle"></i> Entenda seu resultado</button>
 
-      <!-- Modal -->
-      <div class="modal fade" id="entendaSeuResultado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Entendendo o Resultado</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Você e {{result.candidato.name}} têm <span class="lead percentage">{{#round result.percentage}}{{/round}}%</span> de compatibilidade.</p>
-              <p>As coisas em comum são:</p>
-              {{#each result.questions as |question question_index|}}
-                <p  class="pergunta-concordante">{{question.position_text}}</p>
-                <p  class="resposta-concordante">Você e {{../result.candidato.name}} concordam que {{downcase question.position_label}}.</p>
-              {{/each}}
-            </div>
-          </div>
+      <div class="text-center" style="color:black !important;">
+        <a class="btn btn-outline-primary btn-sm" onclick="ga('send', 'event', 'nav-facebook-share', 'click');" href="//www.facebook.com/sharer/sharer.php" title="Responda as perguntas e encontre seu candidatoi" target="_blank">
+        <span class="fa-stack fa-lg">
+        <i class="fab fa-facebook"></i>
+        </span>
+        </a>
+        <a class="btn btn-outline-success btn-sm" onclick="ga('send', 'event', 'nav-whatsapp-share', 'click');" href="whatsapp://send?text=Oi! Uma equipe de pesquisadores e analistas de políticas públicas criou um ‘match’ para ajudar indecisos nessa reta final, perguntando sobre os temas essenciais das propostas do Bolsonaro e do Haddad. É rápido, fácil de usar e bem imparcial. *São só 10 perguntas e você descobre seu candidato.* Acesse aqui e repasse para os seus indecisos: http://bit.ly/DecidaSeuVoto" target="_blank">
+        <span class="fa-stack fa-lg">
+        <i class="fab fa-whatsapp"></i>
+        </span>
+        </a>
+      </div>
+
+  </div>
+  <div class="row justify-content-md-center candidate-result">
+    <a class="btn btn-primary btn-lg" href="/" role="button"><i class="fas fa-chevron-left"></i> Voltar</a>
+
+    <button class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#entendaSeuResultado" role="button">
+      <i class="fas fa-info-circle"></i> Entenda seu resultado</button>
+  </div>
+  <div class="modal fade" id="entendaSeuResultado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entendendo o Resultado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Você e {{result.candidato.name}} têm <span class="lead percentage">{{#round result.percentage}}{{/round}}%</span> de compatibilidade.</p>
+          <p>As coisas em comum são:</p>
+          {{#each result.questions as |question question_index|}}
+            <p  class="pergunta-concordante">{{question.position_text}}</p>
+            <p  class="resposta-concordante">Você e {{../result.candidato.name}} concordam que {{downcase question.position_label}}.</p>
+          {{/each}}
         </div>
       </div>
+    </div>
   </div>
