@@ -13,6 +13,8 @@ Fazer rolar!
 ```
 npm start
 ```
+E agora você pode ir para [http://localhost:3000](http://localhost:3000).
+
 Testes
 ------
 ```
