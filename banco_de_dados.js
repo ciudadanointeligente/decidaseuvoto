@@ -41,80 +41,80 @@ var questions = [
     id: 1,
     name: 'O trabalhador deve contribuir mais tempo do que já contribui hoje para poder se aposentar?',
     positions: [
-                {label: 'Sim', extra_class: 'check', id: 1},// Outro
-                {label:'Não', extra_class: 'times', id: 2},// Haddade
+                {label: 'Sim', id: 1},// Outro
+                {label:'Não', id: 2},// Haddade
                 ]
     },
     {
         id: 2,
-        name: 'Quem ganha R$ 5 mil deve pagar proporcionalmente o mesmo imposto de quem ganha R$ 5 milhões?',
+        name: 'Quem ganha R$ 5 mil deve pagar o mesmo imposto proporcional de quem ganha R$ 50 mil?',
         positions: [
-                    {label: 'Sim', extra_class: 'check', id: 3},// Outro
-                    {label:'Não', extra_class: 'times', id: 4},// Haddade
+                    {label: 'Sim', id: 3},// Outro
+                    {label:'Não', id: 4},// Haddade
                     ]
     },
     {
         id: 3,
         name: 'O Estado deve investir mais na saúde pública para garantir o acesso gratuito e universal a todos os cidadãos?',
         positions: [
-                    {label: 'Sim', extra_class: 'check', id: 5},// Haddade
-                    {label:'Não', extra_class: 'times', id: 6},// Outro
+                    {label: 'Sim', id: 5},// Haddade
+                    {label:'Não', id: 6},// Outro
                     ]
     },
     {
         id: 4,
-        name: 'As pessoas LGBTI+ devem ter os mesmos direitos de todos os outros cidadãos?',
+        name: 'As pessoas homossexuais devem ter os mesmos direitos de todos os outros cidadãos?',
         positions: [
-                    {label: 'Sim', extra_class: 'check', id: 7},// Haddade
-                    {label:'Não', extra_class: 'times', id: 8},// Outro
+                    {label: 'Sim', id: 7},// Haddade
+                    {label:'Não', id: 8},// Outro
                     ]
     },
     {
         id: 5,
         name: 'Você é a favor da igualdade salarial entre homens e mulheres que ocupem o mesmo cargo?',
         positions: [
-                    {label: 'Sim', extra_class: 'check', id: 9},// Haddade
-                    {label:'Não', extra_class: 'times', id: 10},// Outro
+                    {label: 'Sim', id: 9},// Haddade
+                    {label:'Não', id: 10},// Outro
                     ]
     },
     {
         id: 6,
         name: 'Você apoia a valorização do salário mínimo?',
         positions: [
-                    {label: 'Sim', extra_class: 'check', id: 11},// Haddade
-                    {label:'Não', extra_class: 'times', id: 12},// Outro
+                    {label: 'Sim', id: 11},// Haddade
+                    {label:'Não', id: 12},// Outro
                     ]
     },
     {
         id: 7,
-        name: ' O Brasil deve participar do Conselho de Direitos Humanos da ONU?',
+        name: ' O Brasil deve sair do Conselho de Direitos Humanos da ONU?',
         positions: [
-                    {label: 'Sim', extra_class: 'check', id: 13},// Haddade
-                    {label:'Não', extra_class: 'times', id: 14},// Outro
+                    {label: 'Sim', id: 13},// Haddade
+                    {label:'Não', id: 14},// Outro
                     ]
     },
     {
         id: 8,
-        name: 'O Brasil deve expandir a geração de energias renováveis (ex: solar, eólica, biomassa)?',
+        name: 'A liberação da posse de armas de fogo é importante para solucionar os problemas da segurança pública no Brasil?',
         positions: [
-                    {label: 'Sim', extra_class: 'check', id: 15},// Haddade
-                    {label:'Não', extra_class: 'times', id: 16},// Outro
+                    {label: 'Sim', id: 15},// Outro
+                    {label:'Não', id: 16},// Haddade
                     ]
     },
     {
         id: 9,
-        name: 'O governo deve ouvir a sociedade em seu processo de tomada de decisão?',
+        name: 'O respeito aos opositores é importante para o bom funcionamento de uma democracia?',
         positions: [
-                    {label: 'Sim', extra_class: 'check', id: 17},// Haddade
-                    {label:'Não', extra_class: 'times', id: 18},// Outro
+                    {label: 'Sim', id: 17},// Haddade
+                    {label:'Não', id: 18},// Outro
                     ]
     },
     {
         id: 10,
         name: 'O Brasil deve ampliar seus investimentos em educação ao longo dos próximos anos?',
         positions: [
-                    {label: 'Sim', extra_class: 'check', id: 19},// Haddade
-                    {label:'Não', extra_class: 'times', id: 20},// Outro
+                    {label: 'Sim', id: 19},// Haddade
+                    {label:'Não', id: 20},// Outro
                     ]
     }
 ];
