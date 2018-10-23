@@ -7,8 +7,6 @@ body {
   color: #222;
   text-align: left;
   background-color: #fff;
-
-
 }
 
 a {
@@ -23,7 +21,10 @@ p {
   color: #222;
   text-align: center;
   background-color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
+
 .center {
     display: block;
     margin-left: auto;
@@ -43,21 +44,18 @@ p {
 }
 
 .center3 {
-      line-height: 1;
+      line-height: 1.3;
       color: #bfc944;
 }
+
 
 .label {
   display: block;
   margin-top: 5px;
   font-weight: 300;
-
 }
 
-p {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+
 
 .row {
       background-color: #f8f9fa;
@@ -97,17 +95,17 @@ p {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 3px;
-
 }
+
 .fa-check {
   color: green;
 }
+
 .fa-times {
   color: red;
 }
 
 .footer {
-
   bottom: 0;
   width: 100%;
   height: 60px;
@@ -115,6 +113,15 @@ p {
   background-color: black;
 }
 
-nav {
+.nav {
   display: flex;
+}
+
+.container-fluid {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+@media screen and (max-width: 480px) {
+
 }
