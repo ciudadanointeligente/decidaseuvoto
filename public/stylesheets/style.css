@@ -118,8 +118,8 @@ p {
 }
 
 .container-fluid {
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 @media screen and (max-width: 480px) {
