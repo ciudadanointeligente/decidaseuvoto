@@ -1,20 +1,30 @@
-<div class="container-fluid">
-<div class="row" style="background-color: #ffffff">
-    <div class="col-sm"><img src="/images/logo-decida.svg" class="center"></div>
-    <div class="col-sm">
-      <p class="center3">Decida seu voto aqui com a gente!</p>
-      </div>
-        <div class="col-sm">
 
-<p class="center2">Queremos te ajudar a decidir seu voto à Presidência da República de forma ágil e bem fundamentada!</p>
 
-<p class="center2">Abaixo, dez perguntas rápidas e diretas sobre temas determinantes para os rumos do Brasil. Responda e saiba qual candidato se aproxima mais do país em que você deseja viver ao longo dos próximos quatro anos.</p>
+<div class="col-sm">
+
+
+<section class="home_banner_area">
+    <div class="banner_inner d-flex align-items-center">
+<div class="container">
+  <div class="col-md-4 center" >
+    <div class="halemet_img">
+      <img src="/images/logo-decida.svg" alt="">
+    </div>
   </div>
+  <div class="banner_content row">
+    <div class="col-lg-12">
+      <p class="center3">Decida seu voto aqui com a gente!</p>
+      <p>Queremos te ajudar a decidir seu voto à Presidência da República de forma ágil e bem fundamentada!</p>
+<p class="center2">Abaixo, dez perguntas rápidas e diretas sobre temas determinantes para os rumos do Brasil. Responda e saiba qual candidato se aproxima mais do país em que você deseja viver ao longo dos próximos quatro anos.</p>
+    </div>
 
+  </div>
 </div>
-
-
-
+    </div>
+</section>
+</div>
+<div class="w-100"></div>
+<div class="col-sm">
 
 <form method="POST" action='/' >
     {{#each questions as |question question_index|}}
@@ -35,7 +45,7 @@
               </div>
           {{/each}}
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="nao_sei_answer_question_{{question.id}}" name="question_{{question.id}}">
+            <input class="form-check-input" type="radio" id="nao_sei_answer_question_{{question.id}}" name="question_{{question.id}}" required>
 
             <label class="form-check-label" for="nao_sei_answer_question_{{question.id}}">
             <img src="/images/question.png">  Não sei
@@ -47,3 +57,4 @@
     {{/each}}
   <button type="submit" class="btn btn-primary">Ver resultados</button>
 </form>
+</div>

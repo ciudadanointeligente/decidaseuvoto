@@ -5,7 +5,7 @@ var _ = require('lodash');
 var Calculadora = require('../calculator.js');
 
 router.get('/', function(req, res, next) {
-  res.render('index', {'questions': questions_});
+  res.render('index', {'questions': questions_, 'layout': 'layout_index'});
 });
 router.post('/', function(req, res, next) {
     var answers = _.map(req.body, function(e){return parseInt(e);});
