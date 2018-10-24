@@ -1,39 +1,36 @@
+  <div class="parallax">
+    <div class="container">
 
+    <div class="col-md-4 center" >
+      <div class="hero_img">
+        <img src="/images/logo-decida.svg" alt="">
+      </div>
+    </div>
 
-<div class="col-sm">
+    <div class="banner_content row">
+      <div class="col-lg-12">
+        <p class="center2">Queremos te ajudar a decidir seu voto à Presidência da República de forma ágil e bem fundamentada!</p>
+        <p class="center3">Abaixo, onze perguntas rápidas e diretas sobre temas determinantes para os rumos do Brasil. Responda e saiba qual candidato se aproxima mais do país em que você deseja viver ao longo dos próximos quatro anos.</p>
+      </div>
 
+      <section id="section01" class="demo">
+        <a href="#section02"><span></span></a>
+      </section>
 
-<section class="home_banner_area">
-    <div class="banner_inner d-flex align-items-center">
-<div class="container">
-  <div class="col-md-4 center" >
-    <div class="halemet_img">
-      <img src="/images/logo-decida.svg" alt="">
     </div>
   </div>
-  <div class="banner_content row">
-    <div class="col-lg-12">
-      <p class="center3">Responda as perguntas e encontre seu candidato</p>
-      <p class="center2">Queremos te ajudar a decidir seu voto à Presidência da República de forma ágil e bem fundamentada!</p>
-<p class="center2">Abaixo, onze perguntas rápidas e diretas sobre temas determinantes para os rumos do Brasil. Responda e saiba qual candidato se aproxima mais do país em que você deseja viver ao longo dos próximos quatro anos.</p>
-    </div>
+</div>
 
-  </div>
-</div>
-    </div>
-</section>
-</div>
-<div class="w-100"></div>
-<div class="col-sm">
+<div id="section02">
 
 <form method="POST" action='/' >
     {{#each questions as |question question_index|}}
     <div class="form-group">
       <div class="row">
         <div class="col-6">
-          <label for="question_{{id}}"><strong>{{add question_index 1 }}) {{question.name}}</strong></label>
+          <label for="question_{{id}}">{{add question_index 1 }}) {{question.name}}</label>
         </div>
-        <div class="col-4">
+        <div class="col-6">
           {{#each question.positions as |position position_index| }}
 
               <div class="form-check form-check-inline">

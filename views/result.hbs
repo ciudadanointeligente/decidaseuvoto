@@ -1,9 +1,12 @@
+<div class="parallax">
+  <div class="container">
+
   <div class="row justify-content-md-center candidate-result">
-    <div class="flag-background">
+
       <div class="jumbotron text-center">
           <img src="{{result.candidato.image}}" class="candidate">
       </div>
-    </div>
+
       <h1 class="display-4 text-center">{{result.candidato.name}}</h1>
 
       <div class="text-center" style="color:black !important;">
@@ -20,15 +23,16 @@
       </div>
 
   </div>
-  <div class="row justify-content-md-center candidate-result">
-    <a class="btn btn-primary btn-lg" href="/" role="button"><i class="fas fa-chevron-left"></i> Voltar</a>
 
-    <button class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#entendaSeuResultado" role="button">
+  <div class="row candidate-result text-center">
+    <button class="btn btn-2 btn-lg text-center" data-toggle="modal" data-target="#entendaSeuResultado" role="button">
       <i class="fas fa-info-circle"></i> Entenda seu resultado</button>
+        <a class="btn btn-3 btn-lg" href="/" role="button"><i class="fas fa-chevron-left"></i> Voltar</a>
   </div>
   <div class="row justify-content-md-center candidate-result">
     <a class="btn btn-primary btn-lg" href="https://drive.google.com/drive/u/0/folders/1kx7QZC_hmsyPme_WKqpVwknrFRv-3f1O" role="button"><i class="fas fa-list"></i> Compare os candidatos</a>
   </div>
+
   <div class="modal fade" id="entendaSeuResultado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -39,13 +43,16 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>Você e {{result.candidato.name}} têm <span class="lead percentage">{{#round result.percentage}}{{/round}}%</span> de compatibilidade.</p>
-          <p>As coisas em comum são:</p>
+          <p style="font-size:1.3em">Você e {{result.candidato.name}} têm <span class="lead percentage">{{#round result.percentage}}{{/round}}%</span> de compatibilidade.</p>
+          <p style="font-size:0.9em">As coisas em comum são:</p>
           {{#each result.questions as |question question_index|}}
-            <p  class="pergunta-concordante">{{question.position_text}}</p>
-            <p  class="resposta-concordante">Você e {{../result.candidato.name}} concordam que {{downcase question.position_label}}.</p>
+            <p  style="font-size:0.9em" class="pergunta-concordante">{{question.position_text}}</p>
+            <p  style="font-size:0.9em"class="resposta-concordante">Você e {{../result.candidato.name}} concordam que {{downcase question.position_label}}.</p>
           {{/each}}
         </div>
       </div>
     </div>
   </div>
+
+</div>
+</div>
