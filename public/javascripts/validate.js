@@ -8,11 +8,10 @@ $(function(){
             }
         });
         if(!response){
-            console.log('hola!!');
-            var message = $('#message');
+            var message = $('#message-marcar-ao-menos-uma');
             message.show();
             setTimeout(function() {
-                $message.hide();
+                message.hide();
             }, 10000);
         }
         return response;
