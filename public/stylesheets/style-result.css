@@ -2,30 +2,38 @@
   background-color: transparent;
 }
 
-.flag-background{
-  background-image: url("/images/background.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 5px;
-  max-height: 334px;
+.btn-outline-primary {
+    color: white;
+    background-color: transparent;
+    background-image: none;
+    border-color: white;
+}
+
+.btn-outline-success {
+    color: white;
+    background-color: transparent;
+    background-image: none;
+    border-color: white;
 }
 
 .jumbotron{
   background: transparent;
-  padding: 3rem 6rem;
+  padding-top:100px;
+  padding-bottom: 0px;
 }
 
 .candidate{
-  max-width: 35%;
+  max-width: 25%;
 }
 
 .display-4{
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
+  color:white;
 }
 .percentage{
   color: #bfc944;
-  font-weight: 700;
+  font-weight: 600;
   margin: 5px 0 50px;
   font-size: 2rem;
 }
@@ -44,13 +52,13 @@
 }
 
 .footer-background{
-    background-image: url("/images/background.png");
+    background-image: url("/images/hero.png");
     background-repeat: no-repeat;
 }
 
 .menu-link{
   color: white;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0 20px 0  0;
   font-size: 1rem;
 }
@@ -60,41 +68,8 @@
   text-decoration: none;
 }
 
-@media (max-width: 1199px) {
-  .candidate{
-    max-width: 36%;
-  }
-  .jumbotron{
-    padding: 2.5rem 5.6rem;
-  }
-}
-
-@media (max-width: 991px) {
-  .candidate{
-    max-width: 36%;
-  }
-  .jumbotron{
-    padding: 1.5rem 3.4rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .candidate{
-    max-width: 40%;
-  }
-  .jumbotron{
-    padding: 1rem 3.1rem;
-  }
-  .menu-link{
-    font-size: 0.7rem;
-  }
-}
-
 @media (max-width: 450px) {
   .candidate{
     max-width: 45%;
-  }
-  .jumbotron{
-    padding: 0.7rem 2.9rem;
   }
 }
