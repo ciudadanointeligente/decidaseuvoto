@@ -277,3 +277,9 @@ section h1 {
     line-height: 1.4;
 }
 }
+.titulo-pagina {
+  color: white;
+}
+.pagina-texto {
+  font-size: inherit;
+}
