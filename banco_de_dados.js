@@ -97,7 +97,7 @@ var questions = [
     },
     {
         id: 8,
-        name: 'A liberação da posse de armas de fogo é importante para solucionar os problemas da segurança pública no Brasil?',
+        name: 'A liberação da posse de armas de fogo é eficaz para solucionar os problemas da segurança pública no Brasil?',
         positions: [
                     {label: 'Sim', extra_class: 'check', id: 15},// Outro
                     {label:'Não', extra_class: 'times', id: 16},// Haddade
