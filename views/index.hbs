@@ -23,7 +23,7 @@
 
 <div id="section02">
 
-<form method="POST" action='/' >
+<form id='formulario_perguntas' method="POST" action='/' >
     {{#each questions as |question question_index|}}
     <div class="form-group">
       <div class="row">
@@ -52,6 +52,9 @@
       </div>
     </div>
     {{/each}}
+    <div class="alert alert-warning invisible" role="alert">
+      Você precisa marcar pelo menos uma resposta como sim ou não.
+    </div>
   <button type="submit" class="btn btn-primary">Ver resultados</button>
 </form>
 </div>
